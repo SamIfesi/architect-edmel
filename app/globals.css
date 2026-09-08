@@ -47,7 +47,7 @@
   body {
     background: var(--bg-primary);
     color: var(--text-primary);
-    font-family: var(--font-sans);
+    font-family: var(--font-inter);
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
   }
@@ -60,5 +60,38 @@
   * {
     scrollbar-width: thin;
     scrollbar-color: var(--border-strong) transparent;
+  }
+}
+
+.hero-sketch path,
+.hero-sketch line {
+  stroke-dasharray: 1;
+  stroke-dashoffset: 1;
+  animation: draw-in 2s ease-out forwards;
+}
+
+.hero-sketch path:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+.hero-sketch path:nth-child(2) {
+  animation-delay: 0.5s;
+}
+
+.hero-sketch line {
+  animation-delay: 0.5s;
+}
+
+@keyframes draw-in {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-sketch path,
+  .hero-sketch line {
+    stroke-dashoffset: 0;
+    animation: none;
   }
 }
