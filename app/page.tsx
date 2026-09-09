@@ -1,11 +1,15 @@
-import Navbar from '../src/components/nav/Navbar';
+import Navbar from '@/components/ui/Navbar';
+import Footer from '@/components/ui/Footer';
+import Hero from '@/components/section/Hero';
 
 export default function Home() {
   return (
-    <main className="flex flex-col flex-1 items-center justify-center bg-primary">
-      <div className="flex flex-1 w-full max-w-6xl flex-col items-center justify-between sm:items-start">
-        <Navbar />
-      </div>
-    </main>
+    <>
+      <Navbar />
+      <main className="flex flex-col flex-1 items-center justify-center bg-">
+        <Hero />
+      </main>
+      <Footer/>
+    </>
   );
 }
