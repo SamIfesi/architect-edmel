@@ -12,28 +12,34 @@
 
   --accent: #ff5a1f;
   --accent-hover: #ff7040;
-  --accent-ink: #1a0a03;
+  --accent-l: #1a0a03;
   --warning: #f59e0b;
   --danger: #e5484d;
   --success: #d99a3c;
 }
 
+/* Base Abbr
+  b: background
+  t: text
+  l: link
+ */
+ 
 @theme inline {
   --font-main: var(--font-bricolage);
   --font-inter: var(--font-inter);
 
-  --color-bg-primary: var(--bg-primary);
-  --color-bg-secondary: var(--bg-secondary);
-  --color-bg-tertiary: var(--bg-tertiary);
+  --color-primary-b: var(--bg-primary);
+  --color-secondary-b: var(--bg-secondary);
+  --color-tertiary-b: var(--bg-tertiary);
   --color-border: var(--border);
   --color-border-strong: var(--border-strong);
-  --color-text-primary: var(--text-primary);
-  --color-text-secondary: var(--text-secondary);
-  --color-text-muted: var(--text-muted);
+  --color-primary-t: var(--text-primary);
+  --color-secondary-t: var(--text-secondary);
+  --color-muted-t: var(--text-muted);
 
   --color-accent: var(--accent);
   --color-accent-hover: var(--accent-hover);
-  --color-accent-ink: var(--accent-ink);
+  --color-accent-l: var(--accent-l);
   --color-warning: var(--warning);
   --color-danger: var(--danger);
   --color-success: var(--success);
@@ -64,27 +70,31 @@
 }
 
 .hero-sketch path,
-.hero-sketch line {
+.hero-sketch line,
+.hero-sketch circle {
   stroke-dasharray: 1;
   stroke-dashoffset: 1;
-  animation: draw-in 2s ease-out forwards;
-}
-
-.hero-sketch path:nth-child(1) {
-  animation-delay: 0.1s;
-}
-
-.hero-sketch path:nth-child(2) {
-  animation-delay: 0.5s;
-}
-
-.hero-sketch line {
-  animation-delay: 0.5s;
+  animation: draw-in 5s ease-out infinite;
 }
 
 @keyframes draw-in {
-  to {
+  0% {
+    stroke-dashoffset: 1;
+  }
+  40% {
     stroke-dashoffset: 0;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-sketch path,
+  .hero-sketch line,
+  .hero-sketch circle {
+    stroke-dashoffset: 0;
+    animation: none;
   }
 }
 
