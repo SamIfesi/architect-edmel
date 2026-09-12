@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import type { PageSection } from '@/data/constants';
+import type { PageSection } from '@/libs/utils';
 import Link from 'next/link';
 
 export default function SectionNav({ sections }: { sections: PageSection[] }) {

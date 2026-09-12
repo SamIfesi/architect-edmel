@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import { SOCIAL_LINKS, CONTACT_INFO } from '@/data/constants';
+import { SOCIAL_LINKS, CONTACT_INFO } from '@/libs/utils';
 
 export default function Footer() {
   const year = new Date().getFullYear();
@@ -41,7 +41,7 @@ export default function Footer() {
             <div className="flex gap-4">
               {SOCIAL_LINKS.map((social) => (
                 <Link
-                  key={social.name}
+                  key={social.label}
                   href={social.href}
                   target="_blank"
                   rel="noopener noreferrer"
