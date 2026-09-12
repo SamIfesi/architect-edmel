@@ -47,7 +47,7 @@ export default function Footer() {
                   rel="noopener noreferrer"
                   className="text-muted hover:text-accent transition-colors"
                 >
-                  {social.name}
+                  {social.label}
                 </Link>
               ))}
             </div>
