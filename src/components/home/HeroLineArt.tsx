@@ -5,7 +5,7 @@ export default function HeroSketch() {
       <CornerTick className="-right-2 -top-2 rotate-90" />
       <CornerTick className="-bottom-2 -left-2 -rotate-90" />
       <CornerTick className="-bottom-2 -right-2 rotate-180" />
-      <div className="h-full w-full border border-border-strong bg-bg-secondary p-10">
+      <div className="h-full w-full border border-border-strong bg-secondary-b p-10">
         <svg
           viewBox="0 0 240 260"
           className="hero-sketch h-full w-full"

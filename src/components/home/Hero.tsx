@@ -10,19 +10,19 @@ export default function Hero() {
             Architecture that starts with how you live.
           </h1>
           <p className="max-w-[46ch] text-lg leading-relaxed text-text-secondary">
-            Edmel designs homes around the people who live in them — from
-            the first sketch to the day you get the keys.
+            Edmel designs homes around the people who live in them — from the
+            first sketch to the day you get the keys.
           </p>
           <div className="flex flex-wrap items-center gap-6">
             <Link
               href="/contact"
-              className="rounded-full bg-accent px-6 py-3 text-sm font-medium text-accent-ink transition-colors hover:bg-accent-hover"
+              className="rounded-full bg-accent px-6 py-3 text-sm font-medium text-tertiary-b transition-all hover:bg-accent-hover hover:text-accent-l"
             >
               Start a project
             </Link>
             <Link
               href="/work"
-              className="text-sm font-medium text-text-primary underline decoration-border-strong underline-offset-4 transition-colors hover:decoration-accent"
+              className="text-sm font-medium text-text-primary border border-border px-5 py-3 rounded-full transition-colors hover:decoration-accent hover:border-accent"
             >
               View our work
             </Link>
