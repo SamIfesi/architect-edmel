@@ -31,8 +31,10 @@
   --color-primary-b: var(--bg-primary);
   --color-secondary-b: var(--bg-secondary);
   --color-tertiary-b: var(--bg-tertiary);
+
   --color-border: var(--border);
   --color-border-strong: var(--border-strong);
+  
   --color-primary-t: var(--text-primary);
   --color-secondary-t: var(--text-secondary);
   --color-muted-t: var(--text-muted);
@@ -40,6 +42,7 @@
   --color-accent: var(--accent);
   --color-accent-hover: var(--accent-hover);
   --color-accent-l: var(--accent-l);
+
   --color-warning: var(--warning);
   --color-danger: var(--danger);
   --color-success: var(--success);
