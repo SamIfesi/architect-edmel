@@ -4,6 +4,18 @@ import HeroSketch from "./HeroLineArt"
 export default function Hero() {
   return (
     <section className="relative w-full">
+      <div aria-hidden className="pointer-events-none absolute inset-0 -z-10">
+        <div className="glow-blob absolute -left-24 -top-24 h-72 w-72 rounded-full bg-accent/40 blur-3xl" />
+        <div
+          className="glow-blob absolute right-0 top-1/3 h-96 w-96 rounded-full bg-accent-hover/20 blur-3xl"
+          style={{ animationDelay: '2.5s' }}
+        />
+        <div
+          className="glow-blob absolute bottom-0 left-1/4 h-64 w-64 rounded-full bg-warning/20 blur-3xl"
+          style={{ animationDelay: '5s' }}
+        />
+      </div>
+      
       <div className="mx-auto grid w-full max-w-6xl grid-cols-1 items-center gap-12 px-6 py-16 sm:px-10 md:grid-cols-[1.1fr_0.9fr] md:py-24">
         <div className="flex flex-col gap-8">
           <h1 className="font-main text-[2.75rem] font-medium leading-[1.08] tracking-tight text-text-primary sm:text-[3.5rem]">
