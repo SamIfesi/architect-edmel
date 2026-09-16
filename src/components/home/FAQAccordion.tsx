@@ -50,8 +50,8 @@ export default function FAQAccordion() {
 
         <div className="relative min-h-104 lg:min-h-104">
           <Image
-            src="/images/about-interior.jpg"
-            alt="Interior staircase of an Edmel Architect project"
+            src="/images/faq-drawing.jpg"
+            alt="Autocad designed by Edmel Konsult"
             fill
             className="object-cover"
             sizes="(min-width: 1024px) 50vw, 100vw"
