@@ -1,7 +1,7 @@
 @import 'tailwindcss';
 
 :root {
-  --bg-primary: #f3ede4;
+  --bg-primary: #FCFCFB;
   --bg-secondary: #fbf7f0;
   --bg-tertiary: #ebe2d5;
   --border: #e1d7c9;
@@ -23,7 +23,7 @@
   t: text
   l: link
  */
- 
+
 @theme inline {
   --font-main: var(--font-bricolage);
   --font-inter: var(--font-inter);
@@ -34,7 +34,7 @@
 
   --color-border: var(--border);
   --color-border-strong: var(--border-strong);
-  
+
   --color-primary-t: var(--text-primary);
   --color-secondary-t: var(--text-secondary);
   --color-muted-t: var(--text-muted);
@@ -92,18 +92,30 @@
   }
 }
 
-@media (prefers-reduced-motion: reduce) {
-  .hero-sketch path,
-  .hero-sketch line,
-  .hero-sketch circle {
-    stroke-dashoffset: 0;
-    animation: none;
+@keyframes glow-pulse {
+  0%,
+  100% {
+    opacity: 0.35;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.55;
+    transform: scale(1.08);
   }
 }
 
+.glow-blob {
+  animation: glow-pulse 8s ease-in-out infinite;
+}
+
 @media (prefers-reduced-motion: reduce) {
+  .glow-blob {
+    animation: none;
+  }
+
   .hero-sketch path,
-  .hero-sketch line {
+  .hero-sketch line,
+  .hero-sketch circle {
     stroke-dashoffset: 0;
     animation: none;
   }
