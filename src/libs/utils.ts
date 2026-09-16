@@ -173,3 +173,23 @@ export const SERVICES: Service[] = [
     Icon: EngineeringIcon,
   },
 ];
+
+export type FAQItem = { question: string; answer: string };
+
+export const FAQS: FAQItem[] = [
+  {
+    question: 'How long does a typical project take?',
+    answer:
+      'Timelines vary by scope, but most residential projects run four to eight months from first sketch to final walkthrough.',
+  },
+  {
+    question: 'Do you work outside Lagos?',
+    answer:
+      'Yes — we take on select projects across Nigeria and consult internationally where it makes sense.',
+  },
+  {
+    question: 'What should I have ready before our first call?',
+    answer:
+      'A rough budget range, site or property details if you have them, and a few reference images of spaces you love.',
+  },
+];
