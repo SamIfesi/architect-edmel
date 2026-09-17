@@ -8,7 +8,7 @@ export default function About() {
     <section className="bg-secondary-b w-full" id="about">
       <div className="mx-auto grid max-w-6xl">
         {/* Image column */}
-        <div className="relative min-h-104 lg:min-h-128">
+        <div className="relative min-h-104 lg:min-h-104">
           <Image
             src="/images/about-interior.jpg"
             alt="Interior staircase of an Edmel Architect project"
@@ -16,7 +16,7 @@ export default function About() {
             className="object-cover"
             sizes="(min-width: 1024px) 50vw, 100vw"
           />
-          <div className="absolute bottom-6 left-6 max-w-52 bg-secondary-b/95 p-5 backdrop-blur-sm">
+          <div className="absolute bottom-6 left-6 max-w-52 bg-secondary-b/95 p-5 backdrop-blur-sm rounded-2xl shadow-lg">
             <div className="font-main text-4xl font-semibold text-primary-t">
               10+
             </div>
@@ -47,7 +47,7 @@ export default function About() {
             </p>
             <Link
               href="/about"
-              className="inline-flex w-fit items-center gap-2 rounded-full bg-primary-t px-5 py-3 text-xs font-semibold uppercase tracking-wide text-secondary-b transition-colors hover:bg-accent-l"
+              className="inline-flex w-fit items-center gap-2 rounded-full bg-primary-t px-5 py-3 text-xs font-semibold uppercase tracking-wide text-secondary-b  transition-colors hover:bg-accent"
             >
               About Us
               <ArrowRightIcon className="h-3.5 w-3.5" />
