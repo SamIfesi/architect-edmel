@@ -1,5 +1,6 @@
 import Link from 'next/link';
-import {SERVICES} from '@/libs/utils';
+import { SERVICES } from '@/libs/utils';
+import { ArrowRightIcon } from '@/components/icons/ServiceIcons';
 
 export default function Services() {
   return (
@@ -26,21 +27,7 @@ export default function Services() {
                 className="mt-1 inline-flex items-center gap-2 text-xs font-semibold tracking-wide uppercase text-primary-t hover:text-accent transition-colors"
               >
                 Learn more
-                <svg
-                  width="14"
-                  height="14"
-                  viewBox="0 0 14 14"
-                  fill="none"
-                  aria-hidden="true"
-                >
-                  <path
-                    d="M3 7h8M8 3.5L11.5 7 8 10.5"
-                    stroke="currentColor"
-                    strokeWidth="1.4"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                </svg>
+                <ArrowRightIcon className="h-3.5 w-3.5" />
               </Link>
             </div>
           ))}
