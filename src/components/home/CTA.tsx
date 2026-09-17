@@ -18,7 +18,7 @@ export default function CTA() {
       />
 
       {/* Darkness overlay — solid near the text, fading toward the image */}
-      <div className="absolute inset-0 bg-linear-to-r from-accent-l via-accent-l/80 to-accent-l/10" />
+      <div className="absolute inset-0 bg-linear-to-r from-accent-l via-accent-l/40 to-accent-l/5 sm:via-accent-l/80 sm:to-accent-l/10" />
 
       <div className="relative mx-auto flex max-w-6xl flex-col gap-6 px-6 py-20 sm:flex-row sm:items-end sm:justify-between ">
         <div className="w-full">
