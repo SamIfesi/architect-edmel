@@ -13,7 +13,7 @@ export default function About() {
             src="/images/about-interior.jpg"
             alt="Interior staircase of an Edmel Architect project"
             fill
-            className="object-cover"
+            className="object-cover object-bottom-right"
             sizes="(min-width: 1024px) 50vw, 100vw"
           />
           <div className="absolute bottom-6 left-6 max-w-52 bg-secondary-b/95 p-5 backdrop-blur-sm rounded-2xl shadow-lg">
